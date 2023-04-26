@@ -9,6 +9,7 @@ public class Lutemon implements Serializable {
     protected int experience;
     protected int health;
     protected int maxHealth;
+    protected  int image;
 
 
     protected String lutemonColor;
@@ -32,6 +33,7 @@ public class Lutemon implements Serializable {
         return lutemonColor;
     }
 
+
     public int getAttack() {
         return attack;
     }
@@ -50,5 +52,9 @@ public class Lutemon implements Serializable {
 
     public int getMaxHealth() {
         return maxHealth;
+    }
+
+    public int getImage() {
+        return image;
     }
 }

@@ -11,8 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 
 
 public class LutemonListAdapter extends RecyclerView.Adapter<LutemonViewHolder>{
@@ -33,9 +31,12 @@ public class LutemonListAdapter extends RecyclerView.Adapter<LutemonViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull LutemonViewHolder holder, int position){
-        Lutemon lutemon = lutemons.get(position);
-        holder.lutemonName.setText(lutemon.getName() + " (" + lutemon.getColor() + ")");
-
+        holder.lutemonName.setText(lutemons.get(position).getName() + " (" + lutemons.get(position).getColor() + ")");
+        holder.lutemonAttack.setText("Hyökkäys: " + String.valueOf(lutemons.get(position).getAttack()));
+        holder.lutemonDefence.setText("Puolustus: " + String.valueOf(lutemons.get(position).getDefence()));
+        holder.lutemonExperience.setText("Kokemus: "+ String.valueOf(lutemons.get(position).getExperience()));
+        holder.lutemonHealth.setText("Elämä: " + String.valueOf(lutemons.get(position).getHealth()) + "/" + String.valueOf(lutemons.get(position).getMaxHealth()));
+        holder.lutemonImage.setImageResource(lutemons.get(position).getImage());
     }
 
     @Override
