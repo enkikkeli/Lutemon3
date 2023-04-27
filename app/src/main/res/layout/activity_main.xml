@@ -34,6 +34,7 @@
         android:layout_width="207dp"
         android:layout_height="52dp"
         android:layout_marginTop="32dp"
+        android:onClick="switchToFragmentActivity"
         android:text="Siirrä Lutemoneja"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

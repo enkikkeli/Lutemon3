@@ -24,18 +24,23 @@ public class AddLutemonActivity extends AppCompatActivity {
         switch (colors.getCheckedRadioButtonId()) {
             case R.id.rbBlack:
                 LutemonStorage.getInstance().addLutemon(new Black(name.getText().toString(), color.getText().toString()));
+                KotiStorage.getInstance().addLutemon(new Black(name.getText().toString(), color.getText().toString()));
                 break;
             case R.id.rbGreen:
                 LutemonStorage.getInstance().addLutemon(new Green(name.getText().toString(), color.getText().toString()));
+                KotiStorage.getInstance().addLutemon(new Green(name.getText().toString(), color.getText().toString()));
                 break;
             case R.id.rbOrange:
                 LutemonStorage.getInstance().addLutemon(new Orange(name.getText().toString(), color.getText().toString()));
+                KotiStorage.getInstance().addLutemon(new Orange(name.getText().toString(), color.getText().toString()));
                 break;
             case R.id.rbPink:
                 LutemonStorage.getInstance().addLutemon(new Pink(name.getText().toString(), color.getText().toString()));
+                KotiStorage.getInstance().addLutemon(new Pink(name.getText().toString(), color.getText().toString()));
                 break;
             case R.id.rbWhite:
                 LutemonStorage.getInstance().addLutemon(new White(name.getText().toString(), color.getText().toString()));
+                KotiStorage.getInstance().addLutemon(new White(name.getText().toString(), color.getText().toString()));
                 break;
 
 

@@ -29,4 +29,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void switchToFragmentActivity(View view) {
+        Intent intent = new Intent(this, FragmentActivity.class);
+        startActivity(intent);
+    }
 }
